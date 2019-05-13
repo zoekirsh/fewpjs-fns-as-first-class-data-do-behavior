@@ -7,8 +7,12 @@ function handleClick(e) {
 
 /* End Given Code, don't edit above here...*/
 
-/* Write your implementation of greet() */
+/* Write your implementation of displayMessage() */
+function displayMessage(msg) {
+  document.getElementById("greeting").innerText = msg;
+}
 
+/* Write your implementation of greet() */
 function greet(timeStr) {
   /* It would be a good idea to make sure hour isn't less than 0 or greater
    * than 24...perhaps "throwing an Error" if one of these impossible cases
@@ -21,9 +25,4 @@ function greet(timeStr) {
   if ( hour < 12) return "Good Morning"
   if ( hour > 17) return "Good Evening"
   return "Good Afternoon"
-}
-
-/* Write your implementation of displayMessage() */
-function displayMessage(msg) {
-  document.getElementById("greeting").innerText = msg;
 }
